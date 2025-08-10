@@ -254,7 +254,7 @@
         </div>        
     </div>
     <!-- Start Quick menu with more functio -->
-    <div class="user_div">
+    <div class="user_div" style="display: none;">
         <ul class="nav nav-tabs">
             <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#righttab-statistics">Statistics</a></li>
             <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#righttab-Result">Result</a></li>
@@ -773,149 +773,18 @@
         <script src="./assets/js/menu/menu.js"></script>
     </div>
     <!-- Start project content area -->
-    <div class="page">
+    <div class="page" >
         <!-- Start Page header -->
         <div class="section-body" id="page_top" >
             <div class="container-fluid">
-                <div class="page-header">
+               <div class="page-header">
                     <div class="left">                        
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="What you want to find">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button">Search</button>
-                            </div>
-                        </div>
+                        
                     </div>
                     <div class="right">
-                        <ul class="nav nav-pills">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="page-empty.html">Empty page</a>
-                                    <a class="dropdown-item" href="page-profile.html">Profile</a>
-                                    <a class="dropdown-item" href="page-search.html">Search Results</a>
-                                    <a class="dropdown-item" href="page-timeline.html">Timeline</a>
-                                    <a class="dropdown-item" href="page-invoices.html">Invoices</a>
-                                    <a class="dropdown-item" href="page-pricing.html">Pricing</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Auth</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="login.html">Login</a>
-                                    <a class="dropdown-item" href="register.html">Register</a>
-                                    <a class="dropdown-item" href="forgot-password.html">Forgot password</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="404.html">404 error</a>
-                                    <a class="dropdown-item" href="500.html">500 error</a>
-                                </div>
-                            </li>
-                        </ul>
+                     
                         <div class="notification d-flex">
-                            <div class="dropdown d-flex">
-                                <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-1" data-toggle="dropdown"><i class="fa fa-language"></i></a>
-                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../assets/images/flags/us.svg" alt="">English</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../assets/images/flags/es.svg" alt="">Spanish</a>
-                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../assets/images/flags/jp.svg" alt="">japanese</a>
-                                    <a class="dropdown-item" href="#"><img class="w20 mr-2" src="../assets/images/flags/bl.svg" alt="">France</a>
-                                </div>
-                            </div>
-                            <div class="dropdown d-flex">
-                                <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-1" data-toggle="dropdown"><i class="fa fa-envelope"></i><span class="badge badge-success nav-unread"></span></a>
-                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                    <ul class="right_chat list-unstyled w350 p-0">
-                                        <li class="online">
-                                            <a href="javascript:void(0);" class="media">
-                                                <img class="media-object" src="../assets/images/xs/avatar4.jpg" alt="">
-                                                <div class="media-body">
-                                                    <span class="name">Donald Gardner</span>
-                                                    <div class="message">It is a long established fact that a reader</div>
-                                                    <small>11 mins ago</small>
-                                                    <span class="badge badge-outline status"></span>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="online">
-                                            <a href="javascript:void(0);" class="media">
-                                                <img class="media-object " src="../assets/images/xs/avatar5.jpg" alt="">
-                                                <div class="media-body">
-                                                    <span class="name">Wendy Keen</span>
-                                                    <div class="message">There are many variations of passages of Lorem Ipsum</div>
-                                                    <small>18 mins ago</small>
-                                                    <span class="badge badge-outline status"></span>
-                                                </div>
-                                            </a>                            
-                                        </li>
-                                        <li class="offline">
-                                            <a href="javascript:void(0);" class="media">
-                                                <img class="media-object " src="../assets/images/xs/avatar2.jpg" alt="">
-                                                <div class="media-body">
-                                                    <span class="name">Matt Rosales</span>
-                                                    <div class="message">Contrary to popular belief, Lorem Ipsum is not simply</div>
-                                                    <small>27 mins ago</small>
-                                                    <span class="badge badge-outline status"></span>
-                                                </div>
-                                            </a>                            
-                                        </li>
-                                        <li class="online">
-                                            <a href="javascript:void(0);" class="media">
-                                                <img class="media-object " src="../assets/images/xs/avatar3.jpg" alt="">
-                                                <div class="media-body">
-                                                    <span class="name">Phillip Smith</span>
-                                                    <div class="message">It has roots in a piece of classical Latin literature from 45 BC</div>
-                                                    <small>33 mins ago</small>
-                                                    <span class="badge badge-outline status"></span>
-                                                </div>
-                                            </a>                            
-                                        </li>                        
-                                    </ul>
-                                    <div class="dropdown-divider"></div>
-                                    <a href="javascript:void(0)" class="dropdown-item text-center text-muted-dark readall">Mark all as read</a>
-                                </div>
-                            </div>
-                            <div class="dropdown d-flex">
-                                <a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-1" data-toggle="dropdown"><i class="fa fa-bell"></i><span class="badge badge-primary nav-unread"></span></a>
-                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                    <ul class="list-unstyled feeds_widget">
-                                        <li>
-                                            <div class="feeds-left">
-                                                <span class="avatar avatar-blue"><i class="fa fa-check"></i></span>
-                                            </div>
-                                            <div class="feeds-body ml-3">
-                                                <p class="text-muted mb-0">Campaign <strong class="text-blue font-weight-bold">Holiday</strong> is nearly reach budget limit.</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="feeds-left">
-                                                <span class="avatar avatar-green"><i class="fa fa-user"></i></span>
-                                            </div>
-                                            <div class="feeds-body ml-3">
-                                                <p class="text-muted mb-0">New admission <strong class="text-green font-weight-bold">32</strong> in computer department.</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="feeds-left">
-                                                <span class="avatar avatar-red"><i class="fa fa-info"></i></span>
-                                            </div>
-                                            <div class="feeds-body ml-3">
-                                                <p class="text-muted mb-0">6th sem result <strong class="text-red font-weight-bold">67%</strong> in computer department.</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="feeds-left">
-                                                <span class="avatar avatar-azure"><i class="fa fa-thumbs-o-up"></i></span>
-                                            </div>
-                                            <div class="feeds-body ml-3">
-                                                <p class="text-muted mb-0">New Feedback <strong class="text-azure font-weight-bold">53</strong> for university assessment.</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <div class="dropdown-divider"></div>
-                                    <a href="javascript:void(0)" class="dropdown-item text-center text-muted-dark readall">Mark all as read</a>
-                                </div>
-                            </div>
+                            
                             <div class="dropdown d-flex">
                                 <a href="javascript:void(0)" class="chip ml-3" data-toggle="dropdown">
                                     <span class="avatar" style="background-image: url(../assets/images/xs/avatar5.jpg)"></span> George</a>
@@ -946,10 +815,10 @@
                         </ol>
                     </div>
                     <ul class="nav nav-tabs page-header-tab">
-                        <li class="nav-item"><a class="nav-link active"data-toggle="tab" href="#pro-all">List View</a></li>
+                        <li class="nav-item"><a class="nav-link active"data-toggle="tab" href="#pro-all">Lista de Professores</a></li>
                         <li class="nav-item"><a class="nav-link"data-toggle="tab" href="#pro-grid">Grid View</a></li>
-                        <li class="nav-item"><a class="nav-link"data-toggle="tab" href="#pro-profile">Profile</a></li>
-                        <li class="nav-item"><a class="nav-link"data-toggle="tab" href="#pro-add">Add</a></li>
+                        <li class="nav-item"><a class="nav-link"data-toggle="tab" href="#pro-profile">Perfil</a></li>
+                        <li class="nav-item"><a id="_add" class="nav-link"data-toggle="tab" href="#pro-add">Adicionar Novo</a></li>
                     </ul>
                 </div>
             </div>
@@ -960,185 +829,20 @@
                     <div class="tab-pane active" id="pro-all">
                         <div class="table-responsive">
                             <table class="table table-hover table-vcenter table_custom text-nowrap spacing5 border-style mb-0">
-                                <tbody>
-                                    <tr>
-                                        <td class="w60">
-                                            <div class="avatar avatar-pink" data-toggle="tooltip" data-placement="top" title="" data-original-title="Avatar Name">
-                                                <span>GS</span>
-                                            </div>
-                                        </td>
-                                        <td><div class="font-15">Gladys J Smith</div></td>
-                                        <td><span>(417) 646-8377</span></td>
-                                        <td><span class="text-muted">Computer</span></td>
-                                        <td>BCA, MCA</td>
-                                        <td><strong>04 Aug, 2024</strong></td>
-                                        <td><span class="tag tag-success">Full-time</span></td>
-                                        <td>
-                                            <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                            <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                            <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                        </td>
+                                <thead>
+                                     <tr>
+                                        <th>Nome</th>
+                                        <th>Gênero</th>
+                                        <th>Número de Telefone</th>
+                                        <th>Morada</th>
+                                        <th>BI</th>
+                                        <th>Data Ingresso</th>
+                                        <th>Status</th>
                                     </tr>
-                                    <tr>
-                                        <td class="w60">
-                                            <img class="avatar" src="../assets/images/xs/avatar1.jpg" alt="">
-                                        </td>
-                                        <td><div class="font-15">Alan Johnson</div></td>
-                                        <td><span>(417) 646-8377</span></td>
-                                        <td><span class="text-muted">Mechanical</span></td>
-                                        <td>MCA</td>
-                                        <td><strong>04 Aug, 2024</strong></td>
-                                        <td><span class="tag tag-warning">Part-time</span></td>
-                                        <td>
-                                            <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                            <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                            <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w60">
-                                            <img class="avatar" src="../assets/images/xs/avatar2.jpg" alt="">
-                                        </td>
-                                        <td><div class="font-15">James A Johnson</div></td>
-                                        <td><span>(417) 646-1636</span></td>
-                                        <td><span class="text-muted">Mechanical</span></td>
-                                        <td>BCA</td>
-                                        <td><strong>04 Aug, 2024</strong></td>
-                                        <td><span class="tag tag-success">Full-time</span></td>
-                                        <td>
-                                            <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                            <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                            <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w60">
-                                            <img class="avatar" src="../assets/images/xs/avatar3.jpg" alt="">
-                                        </td>
-                                        <td><div class="font-15">Ken Smith</div></td>
-                                        <td><span>(417) 646-8377</span></td>
-                                        <td><span class="text-muted">Mechanical</span></td>
-                                        <td>B.E.</td>
-                                        <td><strong>04 Aug, 2024</strong></td>
-                                        <td><span class="tag tag-success">Full-time</span></td>
-                                        <td>
-                                            <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                            <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                            <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w60">
-                                            <img class="avatar" src="../assets/images/xs/avatar4.jpg" alt="">
-                                        </td>
-                                        <td><div class="font-15">Alice A Smith</div></td>
-                                        <td><span>(417) 646-5023</span></td>
-                                        <td><span class="text-muted">Computer</span></td>
-                                        <td>M.E.</td>
-                                        <td><strong>04 Aug, 2024</strong></td>
-                                        <td><span class="tag tag-success">Full-time</span></td>
-                                        <td>
-                                            <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                            <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                            <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w60">
-                                            <img class="avatar" src="../assets/images/xs/avatar5.jpg" alt="">
-                                        </td>
-                                        <td><div class="font-15">Gladys J Smith</div></td>
-                                        <td><span>(417) 646-9207</span></td>
-                                        <td><span class="text-muted">Mechanical</span></td>
-                                        <td>B.B.A., P.H.D.</td>
-                                        <td><strong>04 Aug, 2024</strong></td>
-                                        <td><span class="tag tag-success">Full-time</span></td>
-                                        <td>
-                                            <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                            <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                            <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w60">
-                                            <img class="avatar" src="../assets/images/xs/avatar6.jpg" alt="">
-                                        </td>
-                                        <td><div class="font-15">Gerald K Smith</div></td>
-                                        <td><span>(417) 646-8377</span></td>
-                                        <td><span class="text-muted">Mathematics</span></td>
-                                        <td>M.COM, M.Ed.</td>
-                                        <td><strong>04 Aug, 2024</strong></td>
-                                        <td><span class="tag tag-success">Full-time</span></td>
-                                        <td>
-                                            <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                            <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                            <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w60">
-                                            <img class="avatar" src="../assets/images/xs/avatar7.jpg" alt="">
-                                        </td>
-                                        <td><div class="font-15">Gladys J Smith</div></td>
-                                        <td><span>(417) 646-9207</span></td>
-                                        <td><span class="text-muted">Mechanical</span></td>
-                                        <td>M.E.</td>
-                                        <td><strong>04 Aug, 2024</strong></td>
-                                        <td><span class="tag tag-warning">Part-time</span></td>
-                                        <td>
-                                            <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                            <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                            <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w60">
-                                            <img class="avatar" src="../assets/images/xs/avatar8.jpg" alt="">
-                                        </td>
-                                        <td><div class="font-15">Danny M Johnson</div></td>
-                                        <td><span>(417) 646-8377</span></td>
-                                        <td><span class="text-muted">Mathematics</span></td>
-                                        <td>M.E.</td>
-                                        <td><strong>04 Aug, 2024</strong></td>
-                                        <td><span class="tag tag-success">Full-time</span></td>
-                                        <td>
-                                            <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                            <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                            <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w60">
-                                            <img class="avatar" src="../assets/images/xs/avatar9.jpg" alt="">
-                                        </td>
-                                        <td><div class="font-15">Patricia Smith</div></td>
-                                        <td><span>(417) 646-8377</span></td>
-                                        <td><span class="text-muted">Science</span></td>
-                                        <td>B.Sc., M.Sc.</td>
-                                        <td><strong>04 Aug, 2024</strong></td>
-                                        <td><span class="tag tag-warning">Part-time</span></td>
-                                        <td>
-                                            <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                            <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                            <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="w60">
-                                            <img class="avatar" src="../assets/images/xs/avatar10.jpg" alt="">
-                                        </td>
-                                        <td><div class="font-15">Gladys J Smith</div></td>
-                                        <td><span>(417) 646-9207</span></td>
-                                        <td><span class="text-muted">Science</span></td>
-                                        <td>B.Sc., M.Sc.</td>
-                                        <td><strong>04 Aug, 2024</strong></td>
-                                        <td><span class="tag tag-success">Full-time</span></td>
-                                        <td>
-                                            <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                            <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                            <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                        </td>
-                                    </tr>
+                                </thead>
+                                <tbody id="tbodyFr">
+                                   
+                                   
                                 </tbody>
                             </table>
                         </div>
@@ -1503,10 +1207,10 @@
                     </div>
                     <div class="tab-pane" id="pro-add">
                         <div class="row clearfix">
-                            <div class="col-lg-8 col-md-12 col-sm-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h3 class="card-title">Basic Information</h3>
+                                        <h3 class="card-title">Informação do professor</h3>
                                         <div class="card-options ">
                                             <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
                                             <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
@@ -1514,74 +1218,100 @@
                                     </div>
                                     <div class="card-body">
                                         <div class="row clearfix">
-                                            <div class="col-md-6 col-sm-12">
+                                            <div class="col-md-4 col-sm-12">
                                                 <div class="form-group">
-                                                    <label>First Name</label>
+                                                    <label>Nome</label>
                                                     <input type="text" class="form-control">
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 col-sm-12">
+                                            <div class="col-md-4 col-sm-12">
                                                 <div class="form-group">
-                                                    <label>Last Name</label>
+                                                    <label>Apelido</label>
                                                     <input type="text" class="form-control">
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 col-sm-12">
+                                            <div class="col-md-4 col-sm-12">
                                                 <div class="form-group">
-                                                    <label>Date of Birth</label>
+                                                    <label>Data de Nascimento</label>
                                                     <input data-provide="datepicker" data-date-autoclose="true" class="form-control" placeholder="Date of Birth">
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 col-sm-12">
-                                                <label>Gender</label>
+                                            <div class="col-md-4 col-sm-12">
+                                                <label>Gênero</label>
                                                 <select class="form-control show-tick">
-                                                    <option value="">-- Gender --</option>
-                                                    <option value="10">Male</option>
-                                                    <option value="20">Female</option>
+                                                    <option value="">-- Gênero --</option>
+                                                    <option value="M">Masculino</option>
+                                                    <option value="F">Feminino</option>
                                                 </select>
                                             </div>
-                                            <div class="col-md-3 col-sm-12">
-                                                <div class="form-group">
-                                                    <label>Department</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
+                                            
+                                            <div class="col-md-4 col-sm-12">
+                                                 <div class="form-group row">
+                                            <label >Tipo de identificação<span class="text-danger">*</span></label>
+                      
+                                                <select class="form-control input-height" name="department">
+                                                    <option value="">Select...</option>
+                                                    <option value="BI">BI</option>
+                                                    <option value="PASSAPORTE">Passaporte</option>
+                                                    <option value="CEDULA">Cedula</option>
+                                                 
+                                                </select>
+                
+                                        </div>
                                             </div>
-                                            <div class="col-md-3 col-sm-12">
+
+                                       <div class="col-md-4 col-sm-12">
+                                         <div class="form-group">
+                                            
+                                            <label >Número de identificacao<span class="text-danger">*</span></label>
+                                            
+                                                <input type="text" class="form-control">
+                                            
+                                        </div>
+                                       </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="form-group">
+                                            <label>Local de Emissão</label>
+                                            
+                                                <input type="text" class="form-control">
+                                         
+                                        </div>
+                                        </div>
+                                         <div class="col-md-4 col-sm-12">
+                                            <div class="form-group">
+                                            <label >Data de Emissão <span class="text-danger">*</span></label>
+                                           
+                                                <input data-provide="datepicker" data-date-autoclose="true" class="form-control" placeholder="">
+                                       
+                                        </div>
+                                         </div>
+                                        <div class="col-md-4 col-sm-12">
+                                             <div class="form-group">
+                                            <label>Data de Expiração<span class="text-danger">*</span></label>
+                                            
+                                                <input data-provide="datepicker" data-date-autoclose="true" class="form-control" placeholder="">
+                                          
+                                        </div>
+
+
+                                        </div>
+                                           
+                                          
+                                            <div class="col-md-4 col-sm-12">
                                                 <div class="form-group">
-                                                    <label>Position</label>
+                                                    <label>Telefone</label>
                                                     <input type="text" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-md-4 col-sm-12">
                                                 <div class="form-group">
-                                                    <label>Phone</label>
+                                                    <label>Email</label>
                                                     <input type="text" class="form-control">
                                                 </div>
                                             </div>
-                                            <div class="col-md-4 col-sm-12">
-                                                <div class="form-group">
-                                                    <label>Enter Your Email</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4 col-sm-12">
-                                                <div class="form-group">
-                                                    <label>Website URL</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <div class="form-group mt-2 mb-3">
-                                                    <input type="file" class="dropify">
-                                                    <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <div class="form-group mt-3">
-                                                    <label>Messages</label>
-                                                    <textarea rows="4" class="form-control no-resize" placeholder="Please type what you want..."></textarea>
-                                                </div>
-                                            </div>
+                                           
+                                           
+                                           
                                             <div class="col-sm-12">
                                                 <button type="submit" class="btn btn-primary">Submit</button>
                                                 <button type="submit" class="btn btn-outline-secondary">Cancel</button>
@@ -1590,76 +1320,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-12 col-sm-12">
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Account Information</h3>
-                                        <div class="card-options ">
-                                            <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
-                                            <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="row clearfix">
-                                            <div class="col-sm-12">
-                                                <div class="form-group">
-                                                    <label>User Name</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="form-group">
-                                                    <label>Password</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="form-group">
-                                                    <label>Confirm Password</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <button type="submit" class="btn btn-primary">Submit</button>
-                                                <button type="submit" class="btn btn-outline-secondary">Cancel</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Account Information</h3>
-                                        <div class="card-options ">
-                                            <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
-                                            <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="form-group">
-                                            <label>Facebook</label>
-                                            <input type="text" class="form-control" placeholder="Facebook">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Twitter</label>
-                                            <input type="text" class="form-control" placeholder="Twitter">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>LinkedIN</label>
-                                            <input type="text" class="form-control" placeholder="LinkedIN ">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Behance</label>
-                                            <input type="text" class="form-control" placeholder="Behance">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>dribbble</label>
-                                            <input type="text" class="form-control" placeholder="dribbble">
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                        <button type="submit" class="btn btn-outline-secondary">Cancel</button>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -1689,6 +1350,7 @@
 
 <!-- Start Main project js, jQuery, Bootstrap -->
 <script src="../assets/bundles/lib.vendor.bundle.js"></script>
+<script src="./assets/js/page/professor.js"></script>
 
 <!-- Start Plugin Js -->
 <script src="../assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>

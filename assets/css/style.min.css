@@ -6805,15 +6805,21 @@ a:hover {
   background: #fff;
 }
 @media screen and (max-width: 1540px) {
+  
   .page {
     width: calc(100% - 280px);
   }
+
+
+
 }
 @media screen and (max-width: 1200px) {
   .page {
     left: 60px;
     width: calc(100% - 60px);
   }
+  
+
 }
 @media screen and (max-width: 767px) {
   .page {
@@ -6863,13 +6869,30 @@ a:hover {
 }
 #page_top {
   background: #f5f5f5;
+  width: 100%;
 }
+
+
+@media screen and (min-width: 1540px ){
+  #page_top {
+    width: calc(300px + 100%) !important;
+  }
+  
+}
+
+
+
 .page-header {
   display: flex;
   justify-content: space-between;
   padding: 13px 0 12px;
   align-items: center;
+  
 }
+@media screen and (min-width: 1200px) {
+  
+}
+
 .page-header .left {
   display: flex;
   align-items: center;
@@ -6921,6 +6944,7 @@ a:hover {
 @media screen and (max-width: 992px) {
   .page-header {
     display: block;
+    
   }
   .page-header .right {
     margin-top: 15px;
@@ -13079,6 +13103,7 @@ svg {
 }
 .chat_app .chat_list .right_chat::-webkit-scrollbar {
   width: 0px;
+  
 }
 .chat_app .chat_list_btn {
   display: none;
@@ -13270,6 +13295,7 @@ svg {
 @media screen and (max-width: 767px) {
   .timeline_item {
     padding-right: 0;
+    
   }
 }
 .timeline_item .tl_avatar {
@@ -15546,6 +15572,7 @@ svg {
 }
 .theme-blush.gradient #left-sidebar .metismenu .g_heading {
   color: rgba(255, 255, 255, 0.5);
+
 }
 .theme-blush.gradient #left-sidebar .metismenu a {
   color: rgba(255, 255, 255, 0.9);

@@ -5,11 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-<title>:: Ericsson :: Departments</title>
+<title>:: Ericsson :: Controle de Faltas</title>
 
 <!-- Bootstrap Core and vandor -->
 <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css" />
 <link rel="stylesheet" href="../assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+<link rel="stylesheet" href="../assets/plugins/dropify/css/dropify.min.css">
+<link rel="stylesheet" href="../assets/plugins/summernote/dist/summernote.css"/>
 <link rel="stylesheet" href="../assets/plugins/sweetalert/sweetalert.css">
 
 <!-- Core css -->
@@ -187,7 +189,7 @@
                         <div class="time">11:30am</div>
                         <div class="desc">
                             <h3>Added an interest</h3>
-                            <h4>“Volunteer Activities”</h4>
+                            <h4>"Volunteer Activities"</h4>
                         </div>
                     </li>
                     <li>
@@ -209,7 +211,7 @@
                         <div class="time">2:00pm</div>
                         <div class="desc">
                             <h3>Responded to need</h3>
-                            <a href="javascript:void(0)">“In-Kind Opportunity”</a>
+                            <a href="javascript:void(0)">"In-Kind Opportunity"</a>
                         </div>
                     </li>
                     <li>
@@ -768,6 +770,7 @@
         </div>
     </div>
     <!-- Start Main leftbar navigation -->
+
     <div id="left-sidebar" class="sidebar">
         <script src="./assets/js/menu/menu.js"></script>
     </div>
@@ -778,12 +781,7 @@
             <div class="container-fluid">
                 <div class="page-header">
                     <div class="left">                        
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="What you want to find">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button">Search</button>
-                            </div>
-                        </div>
+                        
                     </div>
                     <div class="right">
                      
@@ -810,18 +808,17 @@
         <!-- Start Page title and tab -->
         <div class="section-body">
             <div class="container-fluid">
-                <div class="d-flex justify-content-between align-items-center ">
+                <div class="d-flex justify-content-between align-items-center">
                     <div class="header-action">
-                        <h1 class="page-title">Departments</h1>
+                        <h1 class="page-title">Controle de Faltas</h1>
                         <ol class="breadcrumb page-breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Ericsson</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Departments</li>
+                            <li class="breadcrumb-item"><a href="index.html">Ericsson</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Controle de Faltas</li>
                         </ol>
                     </div>
                     <ul class="nav nav-tabs page-header-tab">
-                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Dep-all">List View</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Dep-add">Add</a></li>
-                        <li class="nav-item"><a class="nav-link" id="Dep-tab-Boot" data-toggle="tab" href="#Dep-add-Boot">Add Bootstrap Style</a></li>
+                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#frequencias-list">Lista de Faltas</a></li>
+                        <li class="nav-item"><a id="_add" class="nav-link" data-toggle="tab" href="#frequencias-add">Cadastrar Faltas</a></li>
                     </ul>
                 </div>
             </div>
@@ -829,219 +826,134 @@
         <div class="section-body mt-4">
             <div class="container-fluid">
                 <div class="tab-content">
-                    <div class="tab-pane active" id="Dep-all">
-                        <div class="table-responsive">
-                            <div class="table-responsive card">
-                                <table class="table table-hover table-striped table-vcenter text-nowrap mb-0">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Dept. Name</th>
-                                            <th>Head OF Dept.</th>
-                                            <th>Phone</th>
-                                            <th>Email</th>
-                                            <th>establish</th>
-                                            <th>Std. Capacity</th>
-                                            <th>Edit</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Mechanical Engg.</td>
-                                            <td>Emmett L Johnson</td>
-                                            <td>+123 4567890</td>
-                                            <td>test@example.com</td>
-                                            <td>1998</td>
-                                            <td>150</td>
-                                            <td>
-                                                <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Computer Engg.</td>
-                                            <td>Corrine M Johnson</td>
-                                            <td>+123 4567890</td>
-                                            <td>test@example.com</td>
-                                            <td>2011</td>
-                                            <td>205</td>
-                                            <td>
-                                                <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>M.B.A.</td>
-                                            <td>Gladys J Smith</td>
-                                            <td>+123 4567890</td>
-                                            <td>test@example.com</td>
-                                            <td>2009</td>
-                                            <td>128</td>
-                                            <td>
-                                                <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>M.C.A.</td>
-                                            <td>Patricia Smith</td>
-                                            <td>+123 4567890</td>
-                                            <td>test@example.com</td>
-                                            <td>2014</td>
-                                            <td>98</td>
-                                            <td>
-                                                <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>Civil Engg.</td>
-                                            <td>Danny M Johnson</td>
-                                            <td>+123 4567890</td>
-                                            <td>test@example.com</td>
-                                            <td>2016</td>
-                                            <td>231</td>
-                                            <td>
-                                                <button type="button" class="btn btn-icon btn-sm" title="View"><i class="fa fa-eye"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm" title="Edit"><i class="fa fa-edit"></i></button>
-                                                <button type="button" class="btn btn-icon btn-sm js-sweetalert" title="Delete" data-type="confirm"><i class="fa fa-trash-o text-danger"></i></button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>        
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="Dep-add">
-                        <div class="col-lg-12 col-md-12">                
-                            <div class="card">
-                                <div class="card-header">
-                                    <h3 class="card-title">Department Basic Info</h3>
-                                    <div class="card-options ">
-                                        <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
-                                        <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="row clearfix">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Department Name ">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Head of Department">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <input type="number" class="form-control" placeholder="No. of Students ">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <input data-provide="datepicker" data-date-autoclose="true" class="form-control" placeholder="Department Start Date">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <div class="form-group">
-                                                <textarea rows="4" class="form-control no-resize" placeholder="Brief"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <button type="submit" class="btn btn-primary">Submit</button>
-                                            <button type="submit" class="btn btn-outline-secondary btn-default">Cancel</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header">
-                                    <h3 class="card-title">Staff Member Account Info</h3>
-                                    <div class="card-options ">
-                                        <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
-                                        <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="row clearfix">
-                                        <div class="col-sm-12">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Email">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Phone">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <button type="submit" class="btn btn-primary">Submit</button>
-                                            <button type="submit" class="btn btn-outline-secondary btn-default">Cancel</button>
-                                        </div>
-                                    </div>                        
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="Dep-add-Boot">
+                    <div class="tab-pane active" id="frequencias-list">
                         <div class="card">
                             <div class="card-header">
-                                <h3 class="card-title">Add Department</h3>
-                                <div class="card-options ">
-                                    <a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
-                                    <a href="#" class="card-options-remove" data-toggle="card-remove"><i class="fe fe-x"></i></a>
+                                <h3 class="card-title">Lista de Alunos para Controle de Faltas</h3>
+                                <div class="card-options">
+                                    <form>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control form-control-sm" placeholder="Buscar aluno..." name="s">
+                                            <span class="input-group-btn ml-2"><button class="btn btn-icon" type="submit"><span class="fe fe-search"></span></button></span>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 col-sm-12">
+                                        <div class="form-group">
+                                            <label class="form-label">Disciplina</label>
+                                            <select class="form-control custom-select">
+                                                <option value="">Todas as Disciplinas</option>
+                                                <option value="1">Matemática</option>
+                                                <option value="2">Português</option>
+                                                <option value="3">História</option>
+                                                <option value="4">Geografia</option>
+                                                <option value="5">Ciências</option>
+                                                <option value="6">Física</option>
+                                                <option value="7">Química</option>
+                                                <option value="8">Biologia</option>
+                                                <option value="9">Educação Física</option>
+                                                <option value="10">Artes</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-lg-3 col-md-4 col-sm-12">
+                                        <div class="form-group">
+                                            <label class="form-label">Nivel</label>
+                                            <select class="form-control custom-select">
+                                                <option value="">Todas os niveis</option>
+                                                <option value="1">Turma A</option>
+                                                <option value="2">Turma B</option>
+                                                <option value="3">Turma C</option>
+                                                <option value="4">Turma D</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-sm-12">
+                                        <div class="form-group mt-4">
+                                            <button type="button" class="btn btn-primary">Filtrar</button>
+                                            <button type="button" class="btn btn-light">Limpar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-hover table-vcenter text-nowrap table-striped mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Matrícula</th>
+                                            <th>Nome do Aluno</th>
+                                            <th>Disciplina</th>
+                                            <th>Número de Faltas</th>~
+                                             <th>Periodo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tbodyF">
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="frequencias-add">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Cadastro de Frequências</h3>
+                            </div>
                             <form class="card-body">
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Department Name <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <input type="text" class="form-control">
+                                 <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Matrícula <span class="text-danger">*</span></label>
+                                    <div class="col-md-9">
+                                        <input id="matricula" type="text" class="form-control" placeholder="Código de matrícula do aluno">
+
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Head Of Department</label>
-                                    <div class="col-md-7">
-                                        <input type="text" class="form-control">
+                                    <label class="col-md-3 col-form-label">Disciplina <span class="text-danger">*</span></label>
+                                    <div class="col-md-9">
+                                        <select id="disciplina" class="form-control custom-select">
+
+                                            <option value="">Selecione a Disciplina</option>
+                                            <option value="Matemática">Matemática</option>
+                                            <option value="Português">Português</option>
+                                            <option value="História">História</option>
+                                            <option value="Geografia">Geografia</option>
+                                            <option value="Ciências">Ciências</option>
+                                            <option value="Física">Física</option>
+                                            <option value="Química">Química</option>
+                                            <option value="Biologia">Biologia</option>
+                                            <option value="Educação Física">Educação Física</option>
+                                            <option value="Artes">Artes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                 <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Periodo <span class="text-danger">*</span></label>
+                                    <div class="col-md-9">
+                                        <select id="periodo" class="form-control custom-select">    
+                                            <option value="">Selecione o periodo</option>
+                                            <option value="periodo1">1º</option>
+                                            <option value="periodo2">2º</option>
+                                            <option value="periodo3">3º</option>
+                                    
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Department Start Date <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <input data-provide="datepicker" data-date-autoclose="true" class="form-control" placeholder="">
+                                    <label class="col-md-3 col-form-label">Número de Faltas <span class="text-danger">*</span></label>
+                                    <div class="col-md-9">
+                                        <input id="falta" type="number" class="form-control" min="0" max="20" placeholder="Número de faltas">
                                     </div>
                                 </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Student Capacity <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label">Department Details <span class="text-danger">*</span></label>
-                                    <div class="col-md-7">
-                                        <textarea rows="4" class="form-control no-resize" placeholder="Please type what you want..."></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="col-md-3 col-form-label"></label>
-                                    <div class="col-md-7">
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                        <button type="submit" class="btn btn-outline-secondary">Cancel</button>
-                                    </div>
-                                </div>
+                                
                             </form>
+                            <div class="card-footer text-right">
+                                    <button id="btnSalvarFalta" type="submit" class="btn btn-primary">Salvar</button>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -1053,7 +965,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
-                            Copyright © 2024 <a href="https://themeforest.net/user/puffintheme/portfolio">PuffinTheme</a>.
+                            <a href="templateshub.net">Templates Hub</a>
                         </div>
                         <div class="col-md-6 col-sm-12 text-md-right">
                             <ul class="list-inline mb-0">
@@ -1071,13 +983,18 @@
 
 <!-- Start Main project js, jQuery, Bootstrap -->
 <script src="../assets/bundles/lib.vendor.bundle.js"></script>
+<script src="./assets/js/page/frequencia.js"></script>
 
-<!-- Start Plugin Js -->
-<script src="../assets/plugins/sweetalert/sweetalert.min.js"></script>
+<!-- Start all plugin js -->
+<script src="../assets/bundles/counterup.bundle.js"></script>
+<script src="../assets/bundles/apexcharts.bundle.js"></script>
+<script src="../assets/bundles/summernote.bundle.js"></script>
 <script src="../assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="../assets/plugins/dropify/js/dropify.min.js"></script>
 
 <!-- Start project main js  and page js -->
 <script src="../assets/js/core.js"></script>
-<script src="assets/js/page/dialogs.js"></script>
+<script src="assets/js/page/index.js"></script>
+<script src="assets/js/page/summernote.js"></script>
 </body>
 </html>

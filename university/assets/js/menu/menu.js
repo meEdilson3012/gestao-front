@@ -11,14 +11,14 @@ menu.innerHTML= `<h5 class="brand-name">Ericsson<a href="javascript:void(0)" cla
                     <ul class="metismenu">
                         <li><a href="index.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
                         <li class="active"><a href="students.html"><i class="fa fa-users"></i><span>Alunos</span></a></li>
-                        <li class=""><a href="students.html"><i class="fa fa-file-text"></i><span>Matriculas</span></a></li>
-                        <li class=""><a href="students.html"><i class="fa fa-pencil-square-o"></i><span>Notas</span></a></li>
-                        <li class=""><a href="students.html"><i class="fa fa-calendar-check-o"></i><span>Frequências</span></a></li>
+                        <li class=""><a href="matricula.html"><i class="fa fa-file-text"></i><span>Matriculas</span></a></li>
+                        <li class=""><a href="notas.html"><i class="fa fa-pencil-square-o"></i><span>Notas</span></a></li>
+                        <li class=""><a href="frequencias.html"><i class="fa fa-calendar-check-o"></i><span>Frequências</span></a></li>
                         <li><a href="professors.html"><i class="fa fa-black-tie"></i><span>Professores</span></a></li>
-                        <li><a href="departments.html"><i class="fa fa-book"></i><span>Nivel</span></a></li>
-                        <li><a href="courses.html"><i class="fa fa-graduation-cap"></i><span>Disciplinas</span></a></li>   
+                        <li><a href="niveis.html"><i class="fa fa-book"></i><span>Nivel</span></a></li>
+                        <li><a href="disciplinas.html"><i class="fa fa-graduation-cap"></i><span>Disciplinas</span></a></li>   
                         <li><a href="payments.html"><i class="fa fa-money"></i><span>Pagamentos</span></a></li>
-                        <li><a href="payments.html"><i class="fa fa-line-chart"></i><span>Finaças</span></a></li>
+                        <li><a href="financas.html"><i class="fa fa-line-chart"></i><span>Finaças</span></a></li>
                                       
                         <li class="g_heading">Extra</li>
                         <li><a href="events.html"><i class="fa fa-calendar"></i><span>Calendário</span></a></li>

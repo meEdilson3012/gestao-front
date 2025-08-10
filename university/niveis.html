@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+
+    <title>:: Ericsson :: Níveis</title>
+
+    <!-- Bootstrap Core and vandor -->
+    <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css" />
+
+    <!-- Plugins css -->
+    <link rel="stylesheet" href="../assets/plugins/summernote/dist/summernote.css"/>
+    <link rel="stylesheet" href="../assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+    <link rel="stylesheet" href="../assets/plugins/dropify/css/dropify.min.css">
+    <link rel="stylesheet" href="../assets/plugins/sweetalert/sweetalert.css">
+
+    <!-- Core css -->
+    <link rel="stylesheet" href="../assets/css/style.min.css"/>
+</head>
+
+<body class="font-muli theme-blush">
+
+<!-- Page Loader -->
+<div class="page-loader-wrapper">
+    <div class="loader">
+    </div>
+</div>
+
+<div id="main_content">
+    <!-- Start Main top header -->
+    <div id="header_top" class="header_top">
+        <div class="container">
+            <div class="hleft">
+                <a class="header-brand" href="index.html"><i class="fa fa-graduation-cap brand-logo"></i></a>
+                <div class="dropdown">
+                    <a href="javascript:void(0)" class="nav-link icon menu_toggle"><i class="fe fe-align-center"></i></a>
+                    <a href="page-search.html" class="nav-link icon"><i class="fe fe-search" data-toggle="tooltip" data-placement="right" title="Buscar..."></i></a>
+                    <a href="app-email.html"  class="nav-link icon app_inbox"><i class="fe fe-inbox" data-toggle="tooltip" data-placement="right" title="Email"></i></a>
+                    <a href="app-filemanager.html"  class="nav-link icon app_file xs-hide"><i class="fe fe-folder" data-toggle="tooltip" data-placement="right" title="Gerenciador de Arquivos"></i></a>
+                    <a href="app-social.html"  class="nav-link icon xs-hide"><i class="fe fe-share-2" data-toggle="tooltip" data-placement="right" title="Redes Sociais"></i></a>
+                    <a href="javascript:void(0)" class="nav-link icon theme_btn"><i class="fe fe-feather"></i></a>
+                    <a href="javascript:void(0)" class="nav-link icon settingbar"><i class="fe fe-settings"></i></a>
+                </div>
+            </div>
+            <div class="hright">
+                <a href="javascript:void(0)" class="nav-link icon right_tab"><i class="fe fe-align-right"></i></a>
+                <a href="login.html" class="nav-link icon settingbar"><i class="fe fe-power"></i></a>                
+            </div>
+        </div>
+    </div>
+    
+    <!-- Start Rightbar setting panel -->
+    <div id="rightsidebar" class="right_sidebar">
+        <a href="javascript:void(0)" class="p-3 settingbar float-right"><i class="fa fa-close"></i></a>
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Settings" aria-expanded="true">Configurações</a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#activity" aria-expanded="false">Atividade</a></li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane vivify fadeIn active" id="Settings" aria-expanded="true">
+                <div class="mb-4">
+                    <h6 class="font-14 font-weight-bold text-muted">Configurações de Tema</h6>
+                    <ul class="choose-skin list-unstyled mb-0">
+                        <li data-theme="azure">
+                            <div class="azure"></div>
+                        </li>
+                        <li data-theme="indigo">
+                            <div class="indigo"></div>
+                        </li>
+                        <li data-theme="purple">
+                            <div class="purple"></div>
+                        </li>
+                        <li data-theme="orange">
+                            <div class="orange"></div>
+                        </li>
+                        <li data-theme="green">
+                            <div class="green"></div>
+                        </li>
+                        <li data-theme="cyan">
+                            <div class="cyan"></div>
+                        </li>
+                        <li data-theme="blush" class="active">
+                            <div class="blush"></div>
+                        </li>
+                        <li data-theme="white">
+                            <div class="bg-white"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-4">
+                    <h6 class="font-14 font-weight-bold text-muted">Configurações de Fonte</h6>
+                    <div class="custom-controls-stacked font_setting">
+                        <label class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" name="font" value="font-muli" checked="">
+                            <span class="custom-control-label">Muli Google Font</span>
+                        </label>
+                        <label class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" name="font" value="font-montserrat">
+                            <span class="custom-control-label">Montserrat Google Font</span>
+                        </label>
+                        <label class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" name="font" value="font-poppins">
+                            <span class="custom-control-label">Poppins Google Font</span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <h6 class="font-14 font-weight-bold mt-4 text-muted">Configurações Gerais</h6>
+                    <ul class="setting-list list-unstyled mt-1 setting_switch">
+                        <li>
+                            <label class="custom-switch">
+                                <span class="custom-switch-description">Modo Noturno</span>
+                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-darkmode">
+                                <span class="custom-switch-indicator"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-switch">
+                                <span class="custom-switch-description">Corrigir Cabeçalho</span>
+                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-fixnavbar">
+                                <span class="custom-switch-indicator"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-switch">
+                                <span class="custom-switch-description">Barra Lateral</span>
+                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-toggle-menu" checked="">
+                                <span class="custom-switch-indicator"></span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-switch">
+                                <span class="custom-switch-description">Ícone RTL</span>
+                                <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-rtl">
+                                <span class="custom-switch-indicator"></span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <label class="d-block">Backup de Armazenamento <span class="float-right">2/10</span></label>
+                    <div class="progress progress-xs">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"></div>
+                    </div>
+                    <button type="button" class="btn btn-block btn-outline-primary mt-3">Atualizar Agora</button>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane vivify fadeIn" id="activity" aria-expanded="false">
+                <ul class="new_timeline mt-3">
+                    <li>
+                        <div class="bullet pink"></div>
+                        <div class="time">11:00</div>
+                        <div class="desc">
+                            <h3>Reunião de Equipe</h3>
+                            <h4>Reunião com a equipe de desenvolvimento</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bullet pink"></div>
+                        <div class="time">14:00</div>
+                        <div class="desc">
+                            <h3>Lançamento de Design</h3>
+                            <h4>Novo design para o aplicativo móvel</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bullet green"></div>
+                        <div class="time">15:00</div>
+                        <div class="desc">
+                            <h3>Reunião de Desenvolvimento</h3>
+                            <h4>Discussão sobre novos recursos</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bullet orange"></div>
+                        <div class="time">16:00</div>
+                        <div class="desc">
+                            <h3>Reunião com Cliente</h3>
+                            <h4>Apresentação do projeto para o cliente</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bullet green"></div>
+                        <div class="time">17:00</div>
+                        <div class="desc">
+                            <h3>Revisão de Projeto</h3>
+                            <h4>Revisão final do projeto</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Main leftbar navigation -->
+    <div id="left-sidebar" class="sidebar">
+        <script src="./assets/js/menu/menu.js"></script>
+    </div>
+
+    <!-- Start project content area -->
+    <div class="page">
+        <!-- Start Page header -->
+        <div class="section-body" id="page_top">
+            <div class="container-fluid">
+                <div class="page-header">
+                    <div class="left">                        
+                        
+                    </div>
+                    <div class="right">
+                     
+                        <div class="notification d-flex">
+                            
+                            <div class="dropdown d-flex">
+                                <a href="javascript:void(0)" class="chip ml-3" data-toggle="dropdown">
+                                    <span class="avatar" style="background-image: url(../assets/images/xs/avatar5.jpg)"></span> George</a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                    <a class="dropdown-item" href="page-profile.html"><i class="dropdown-icon fe fe-user"></i> Profile</a>
+                                    <a class="dropdown-item" href="app-setting.html"><i class="dropdown-icon fe fe-settings"></i> Settings</a>
+                                    <a class="dropdown-item" href="app-email.html"><span class="float-right"><span class="badge badge-primary">6</span></span><i class="dropdown-icon fe fe-mail"></i> Inbox</a>
+                                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon fe fe-send"></i> Message</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon fe fe-help-circle"></i> Need help?</a>
+                                    <a class="dropdown-item" href="login.html"><i class="dropdown-icon fe fe-log-out"></i> Sign out</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Page title and tab -->
+        <div class="section-body">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="header-action">
+                        <h1 class="page-title">Níveis</h1>
+                        <ol class="breadcrumb page-breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Ericsson</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Níveis</li>
+                        </ol>
+                    </div>
+                    <ul class="nav nav-tabs page-header-tab">
+                        <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#niveis-list">Lista de Níveis</a></li>
+                        <li class="nav-item"><a id="_add" class="nav-link" data-toggle="tab" href="#niveis-add">Cadastrar Nível</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section-body mt-4">
+            <div class="container-fluid">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="niveis-list">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Lista de Níveis</h3>
+                                <div class="card-options">
+                                    <form>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control form-control-sm" placeholder="Buscar nível..." name="s">
+                                            <span class="input-group-btn ml-2"><button class="btn btn-icon" type="submit"><span class="fe fe-search"></span></button></span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row" id="nivelDados">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="niveis-add">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Cadastro de Nível</h3>
+                            </div>
+                            <form class="card-body">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Nome <span class="text-danger">*</span></label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" placeholder="Nome do nível">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Disciplinas <span class="text-danger">*</span></label>
+                                    <div class="col-md-9">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="custom-control custom-checkbox mb-2">
+                                                    <input type="checkbox" class="custom-control-input" id="disciplina1" name="disciplinas[]" value="Português">
+                                                    <label class="custom-control-label" for="disciplina1">Português</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox mb-2">
+                                                    <input type="checkbox" class="custom-control-input" id="disciplina2" name="disciplinas[]" value="Matemática">
+                                                    <label class="custom-control-label" for="disciplina2">Matemática</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox mb-2">
+                                                    <input type="checkbox" class="custom-control-input" id="disciplina3" name="disciplinas[]" value="Ciências">
+                                                    <label class="custom-control-label" for="disciplina3">Ciências</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox mb-2">
+                                                    <input type="checkbox" class="custom-control-input" id="disciplina4" name="disciplinas[]" value="História">
+                                                    <label class="custom-control-label" for="disciplina4">História</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="custom-control custom-checkbox mb-2">
+                                                    <input type="checkbox" class="custom-control-input" id="disciplina5" name="disciplinas[]" value="Geografia">
+                                                    <label class="custom-control-label" for="disciplina5">Geografia</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox mb-2">
+                                                    <input type="checkbox" class="custom-control-input" id="disciplina6" name="disciplinas[]" value="Física">
+                                                    <label class="custom-control-label" for="disciplina6">Física</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox mb-2">
+                                                    <input type="checkbox" class="custom-control-input" id="disciplina7" name="disciplinas[]" value="Química">
+                                                    <label class="custom-control-label" for="disciplina7">Química</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox mb-2">
+                                                    <input type="checkbox" class="custom-control-input" id="disciplina8" name="disciplinas[]" value="Biologia">
+                                                    <label class="custom-control-label" for="disciplina8">Biologia</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="custom-control custom-checkbox mb-2">
+                                                    <input type="checkbox" class="custom-control-input" id="disciplina9" name="disciplinas[]" value="Inglês">
+                                                    <label class="custom-control-label" for="disciplina9">Inglês</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox mb-2">
+                                                    <input type="checkbox" class="custom-control-input" id="disciplina10" name="disciplinas[]" value="Educação Física">
+                                                    <label class="custom-control-label" for="disciplina10">Educação Física</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox mb-2">
+                                                    <input type="checkbox" class="custom-control-input" id="disciplina11" name="disciplinas[]" value="Filosofia">
+                                                    <label class="custom-control-label" for="disciplina11">Filosofia</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox mb-2">
+                                                    <input type="checkbox" class="custom-control-input" id="disciplina12" name="disciplinas[]" value="Sociologia">
+                                                    <label class="custom-control-label" for="disciplina12">Sociologia</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox mb-2">
+                                                    <input type="checkbox" class="custom-control-input" id="disciplina13" name="disciplinas[]" value="Artes">
+                                                    <label class="custom-control-label" for="disciplina13">Artes</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <small class="form-text text-muted">Selecione todas as disciplinas que deseja associar a este nível</small>
+                                    </div>
+                                </div>
+                                 <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Mensalidade Por Mês <span class="text-danger">*</span></label>
+                                    <div class="col-md-9">
+                                        <input type="number" class="form-control" step="500" placeholder="pagamento">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label">Descrição <span class="text-danger">*</span></label>
+                                    <div class="col-md-9">
+                                        <textarea class="form-control" rows="4" placeholder="Descrição do nível"></textarea>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-right">
+                                    <button type="submit" class="btn btn-primary">Salvar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start main footer -->
+        <div class="section-body">
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <a href="templateshub.net">Templates Hub</a>
+                        </div>
+                        <div class="col-md-6 col-sm-12 text-md-right">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item"><a href="../doc/index.html">Documentation</a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)">FAQ</a></li>
+                                <li class="list-inline-item"><a href="javascript:void(0)" class="btn btn-outline-primary btn-sm">Buy Now</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>    
+</div>
+
+<!-- Start Main project js, jQuery, Bootstrap -->
+<script src="../assets/bundles/lib.vendor.bundle.js"></script>
+<script src="./assets/js/page/nivel.js"></script>
+
+<!-- Start all plugin js -->
+<script src="../assets/bundles/counterup.bundle.js"></script>
+<script src="../assets/bundles/apexcharts.bundle.js"></script>
+<script src="../assets/bundles/summernote.bundle.js"></script>
+<script src="../assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="../assets/plugins/dropify/js/dropify.min.js"></script>
+
+<!-- Start project main js  and page js -->
+<script src="../assets/js/core.js"></script>
+<script src="assets/js/page/index.js"></script>
+<script src="assets/js/page/summernote.js"></script>
+</body>
+</html>
